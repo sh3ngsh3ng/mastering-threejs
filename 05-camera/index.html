@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+</head>
+
+<body>
+    <h1>Cameras</h1>
+    <p>Camera is an abstract class</p>
+    <ol>
+        <li>ArrayCamera render the scene from multiple cameras on specific areas of render
+            <ul>
+                <li>E.g. old multiplayer games where the screen is split</li>
+            </ul>
+        </li>
+        <li>StereoCamera render the scene through two cameras that mimic the eyes to create a parallax effect
+            <ul>
+                <li>E.g. use with devices like VR headset, red and blue glasses or cardboard</li>
+            </ul>
+        </li>
+        <li>
+            CubeCamera do 6 renders, each one facing a different direction. Can render the surrounding for things like
+            environment map, reflection or shadow map
+        </li>
+        <li>OrthographicCamera render the scene without perspective
+            <ul>
+                E.g. Age of Empire, size of characters is always the same
+            </ul>
+        </li>
+        <li>
+            PerspectiveCamera render the scene with perspective
+        </li>
+    </ol>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
