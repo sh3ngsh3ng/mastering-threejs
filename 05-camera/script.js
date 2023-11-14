@@ -72,15 +72,6 @@ const tick = () => {
     // camera.lookAt(new THREE.Vector3())
     camera.lookAt(mesh.position)
 
-    // Camera Controls
-    // 1) FlyControls
-    // 2) FirstPersonControls
-    // 3) PointerLockControls
-    // 4) OrbitControls
-    // 5) TrackBallControls
-    // 6) TransformControls
-    // 7) DragControls
-
     // mesh.rotation.y = elapsedTime
 
     // Render
